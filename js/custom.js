@@ -1,3 +1,33 @@
+$(document).ready(function(){
+  $('.menu-carousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: false,
+    dots: true,
+    arrows: false,
+    centerMode: false,
+    autoplay: false,
+
+    responsive: [
+      {
+        breakpoint: 992, 
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 576, 
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '40px'
+        }
+      }
+    ]
+  });
+});
+
+
 // isotope js
 $(window).on('load', function () {
     $('.filters_menu li').click(function () {

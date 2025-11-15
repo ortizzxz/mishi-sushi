@@ -1,0 +1,55 @@
+/* Limit image height and keep good proportions */
+.menu-img {
+  width: 100%;
+  height: 800px;           /* Desktop height */
+  object-fit: contain;     /* Show whole menu image without cropping */
+  background: #f8f8f8;     /* Soft background behind menu items */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* Improve carousel wrapper */
+#menuCarousel {
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Make arrows bigger and visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);   /* Change color */
+  width: 40px;         /* Bigger arrows */
+  height: 40px;
+  background-size: 100%, 100%;
+}
+
+/* Adjust arrows on small screens */
+@media (max-width: 768px) {
+  .menu-img {
+    height: 60vh;   /* Scale down for tablets */
+    padding: 15px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-img {
+    height: 50vh;   /* Scale down for phones */
+    padding: 10px;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

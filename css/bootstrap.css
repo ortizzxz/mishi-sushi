@@ -4191,6 +4191,9 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: #FDFDF1;
+  border-radius: 10px;
+  border: 1px solid #d2d2c9;
 }
 
 .navbar-nav .nav-link {
