@@ -43,7 +43,7 @@
 
 @media (max-width: 480px) {
   .menu-img {
-    height: 50vh;   /* Scale down for phones */
+    height: 70vh;   /* Scale down for phones */
     padding: 10px;
   }
 
